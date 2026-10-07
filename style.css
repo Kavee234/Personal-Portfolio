@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    width: 58%;
+    margin: 25px auto 0;
+    background-color: #76ad5d;
+    color: white;
+    text-align: center;
+    padding: 12px 0 18px;
+}
+
+.profile-image {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 8px;
+    border-radius: 50%;
+    background-color: white;
+    color: #76ad5d;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+}
+
+header h1 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+header p {
+    font-size: 9px;
+    margin: 3px 0;
+}
+
+section {
+    width: 56%;
+    margin: 10px auto;
+    padding: 12px;
+    background-color: white;
+    border: 5px solid #f1f1f1;
+}
+
+section h2 {
+    font-size: 13px;
+    margin: 0 0 10px;
+}
+
+section p {
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    font-size: 9px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8px;
+}
+
+th {
+    background-color: #76ad5d;
+    color: white;
+    text-align: left;
+    padding: 6px;
+}
+
+td {
+    padding: 7px;
+    border: 1px solid #eee;
+}
+
+.preview {
+    width: 45px;
+    height: 45px;
+    background-color: #ccc;
+    color: #999;
+    font-size: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 9px;
+    margin: 8px 0 3px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px;
+    border: 1px solid #ddd;
+    font-size: 9px;
+}
+
+textarea {
+    height: 60px;
+}
+
+input[type="submit"] {
+    margin-top: 8px;
+    padding: 6px 9px;
+    background-color: #76ad5d;
+    color: white;
+    border: none;
+    font-size: 9px;
+}
+
+footer {
+    width: 58%;
+    margin: 0 auto;
+    background-color: #76ad5d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 9px;
+}
+
+footer p {
+    margin: 2px 0 5px;
+}
+
+footer a {
+    color: white;
+}
