@@ -23,7 +23,7 @@ A simple, static personal portfolio webpage built using pure HTML as part of cou
 
 
 
-* HTML5
+* HTML5 , CSS
 
 #### 
 
