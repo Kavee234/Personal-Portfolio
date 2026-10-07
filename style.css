@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: white;
@@ -6,95 +10,100 @@ body {
 }
 
 header {
-    width: 58%;
+    width: 70%;
+    max-width: 1000px;
     margin: 25px auto 0;
     background-color: #76ad5d;
     color: white;
     text-align: center;
-    padding: 12px 0 18px;
+    padding: 25px 0 28px;
 }
 
 .profile-image {
-    width: 65px;
-    height: 65px;
-    margin: 0 auto 8px;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 12px;
     border-radius: 50%;
     background-color: white;
     color: #76ad5d;
-    font-size: 24px;
+    font-size: 34px;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid white;
 }
 
 header h1 {
-    font-size: 16px;
-    margin: 5px 0;
+    font-size: 28px;
+    margin: 8px 0;
+    font-weight: bold;
 }
 
 header p {
-    font-size: 9px;
-    margin: 3px 0;
+    font-size: 14px;
+    margin: 5px 0;
 }
 
 section {
-    width: 56%;
-    margin: 10px auto;
-    padding: 12px;
+    width: 68%;
+    max-width: 980px;
+    margin: 12px auto;
+    padding: 18px;
     background-color: white;
     border: 5px solid #f1f1f1;
 }
 
 section h2 {
-    font-size: 13px;
-    margin: 0 0 10px;
+    font-size: 20px;
+    margin: 0 0 15px;
 }
 
 section p {
-    font-size: 9px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 8px 0;
 }
 
 ul {
-    padding-left: 20px;
+    padding-left: 25px;
     margin: 0;
 }
 
 li {
-    font-size: 9px;
+    font-size: 14px;
+    margin: 7px 0;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 8px;
+    font-size: 13px;
 }
 
 th {
     background-color: #76ad5d;
     color: white;
     text-align: left;
-    padding: 6px;
+    padding: 10px;
+    font-size: 13px;
 }
 
 td {
-    padding: 7px;
-    border: 1px solid #eee;
+    padding: 12px 10px;
+    border: 1px solid #eeeeee;
+    line-height: 1.5;
 }
 
 .preview {
-    width: 45px;
-    height: 45px;
-    margin:0 auto 8px;
-    background-color: #e7e4e4;
-    color: #76ad5d;
-    Font: Arial, sans-serif;
-    font-size: 8px;
+    width: 60px;
+    height: 60px;
+    background-color: #cccccc;
+    color: #888;
+    font-size: 9px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 form {
@@ -103,47 +112,79 @@ form {
 
 label {
     display: block;
-    font-size: 9px;
-    margin: 8px 0 3px;
+    font-size: 14px;
+    margin: 12px 0 5px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    box-sizing: border-box;
-    padding: 6px;
-    border: 1px solid #ddd;
-    font-size: 9px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
 }
 
 textarea {
-    height: 60px;
+    height: 90px;
 }
 
 input[type="submit"] {
-    margin-top: 8px;
-    padding: 6px 9px;
+    margin-top: 12px;
+    padding: 9px 15px;
     background-color: #76ad5d;
     color: white;
     border: none;
-    font-size: 9px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #5f9648;
 }
 
 footer {
-    width: 58%;
+    width: 70%;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: #76ad5d;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    font-size: 9px;
+    padding: 18px 0;
+    font-size: 14px;
 }
 
 footer p {
-    margin: 2px 0 5px;
+    margin: 5px 0 8px;
+    font-size: 14px;
 }
 
 footer a {
     color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+
+    header,
+    footer {
+        width: 90%;
+    }
+
+    section {
+        width: 88%;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th {
+        font-size: 11px;
+    }
+
+    td {
+        padding: 8px;
+    }
 }
