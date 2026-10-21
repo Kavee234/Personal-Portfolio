@@ -23,7 +23,7 @@ A simple, static personal portfolio webpage built using pure HTML as part of cou
 
 
 
-* HTML5 , CSS
+* HTML5 , CSS , JavaScript
 
 #### 
 
@@ -32,6 +32,6 @@ A simple, static personal portfolio webpage built using pure HTML as part of cou
 
 
 1. Clone this repository:
-'''bash
+bash ->
 git clone [https://github.com/Kavee234/Personal-Portfolio.git](https://github.com/Kavee234/Personal-Portfolio.git)
 
