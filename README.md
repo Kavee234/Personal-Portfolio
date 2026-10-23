@@ -11,7 +11,8 @@ A simple, static personal portfolio webpage built using pure HTML as part of cou
 
 
 * Header Section : Name and introductory tagline.
-* About Me       : Short bio and educational background.
+* About Me       : Short bio.
+* Education      : Academic history, relevant coursework, and skills.
 * Skills         : List of technical and core academic skills.
 * Projects       : Interactive table listing projects, descriptions, and technologies used.
 * Contact Form   : Clean HTML form containing name, email, and message inputs.
@@ -34,4 +35,3 @@ A simple, static personal portfolio webpage built using pure HTML as part of cou
 1. Clone this repository:
 bash ->
 git clone [https://github.com/Kavee234/Personal-Portfolio.git](https://github.com/Kavee234/Personal-Portfolio.git)
-
