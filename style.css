@@ -2072,6 +2072,12 @@ footer p span {
     }
 }
 
+@media(max-width:1200px) {
+    .ambient-two {
+        right: 0
+    }
+}
+
 @media(max-width:1000px) {
     .availability {
         display: none
