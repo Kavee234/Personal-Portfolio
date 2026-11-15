@@ -11,6 +11,7 @@ A simple, static personal portfolio webpage built using pure HTML as part of cou
 
 
 * Header Section : Name and introductory tagline.
+* Interactive visuals : A hanging portrait with coordinate and system-status labels, an anime-style cursor reveal, a draggable 3D technology sphere, and a custom mouse cursor.
 * About Me       : Short bio.
 * Education      : Academic history, relevant coursework, and skills.
 * Skills         : List of technical and core academic skills.

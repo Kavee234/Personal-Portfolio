@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The personal portfolio of Dihen Perera, a Computer Science undergraduate.">
-    <meta name="theme-color" content="#080d15">
+    <meta name="theme-color" content="#090708">
     <title>PORTFOLIO | DIHEN PERERA</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
     <div class="intro" aria-hidden="true">
         <div class="intro-equations"><span class="equation eq-one">∫₀ᵗ e<sup>−x²</sup> dx <b>→</b> <i>√π /
                     2</i></span><span class="equation eq-two">F = ma <b>→</b> <i>ΣF = ma</i></span><span
@@ -54,7 +55,7 @@
                 <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span
                             aria-hidden="true">↘</span></a><a class="button button-secondary" href="#contact">Let’s
                         connect <span aria-hidden="true">↗</span></a></div>
-                <div class="hero-meta"><span><b>01</b> / 03 — SELECTED PROJECTS</span><span>UNIVERSITY OF SRI
+                <div class="hero-meta"><span><b>01</b> / 04 — SELECTED PROJECTS</span><span>UNIVERSITY OF SRI
                         JAYEWARDENEPURA</span></div>
                 <div class="hero-marquee" aria-hidden="true">
                     <div class="hero-marquee-track">
@@ -63,23 +64,57 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-art reveal" aria-label="Animated Dihen Perera monogram graphic">
-                <div class="orbit orbit-a"></div>
-                <div class="orbit orbit-b"></div>
-                <div class="orbit orbit-c"></div><span class="orbit-node node-a"></span><span
-                    class="orbit-node node-b"></span><span class="orbit-node node-c"></span>
-                <div class="hero-core"><span class="core-cross">✳</span><span class="core-monogram">DP</span><span
-                        class="core-label">THINK / BUILD / LEARN</span></div><span
-                    class="art-coordinate coord-top">07°05' N<br>79°59' E</span><span
-                    class="art-coordinate coord-bottom">SYSTEM ONLINE <i></i></span><span class="art-index">FIG. 01 —
-                    ORBITAL STUDY</span>
+            <div class="hero-art reveal" aria-label="Hanging portrait with coordinate and status details">
+                <svg class="anime-filter-defs" aria-hidden="true" focusable="false">
+                    <filter id="anime-style" color-interpolation-filters="sRGB">
+                        <feColorMatrix type="saturate" values="0"></feColorMatrix>
+                        <feComponentTransfer>
+                            <feFuncR type="discrete" tableValues="0.008 0.025 0.08 0.2 0.42 0.72 1"></feFuncR>
+                            <feFuncG type="discrete" tableValues="0.006 0.01 0.025 0.06 0.13 0.28 0.52"></feFuncG>
+                            <feFuncB type="discrete" tableValues="0.025 0.055 0.14 0.34 0.62 0.88 1"></feFuncB>
+                        </feComponentTransfer>
+                    </filter>
+                </svg>
+                <div class="portrait-stage">
+                    <span class="portrait-coordinate coord-top" aria-hidden="true">07°05' N<br>79°59' E</span>
+                    <span class="portrait-coordinate art-index" aria-hidden="true">FIG. 01 —<br>ORBITAL STUDY</span>
+                    <span class="portrait-coordinate coord-bottom" aria-hidden="true">SYSTEM ONLINE <i></i></span>
+                    <div class="portrait-hanger">
+                        <svg class="hanging-strings" viewBox="0 0 260 100" aria-hidden="true" focusable="false">
+                            <line x1="130" y1="0" x2="52" y2="110"></line>
+                            <line x1="130" y1="0" x2="208" y2="110"></line>
+                            <circle cx="130" cy="3" r="3"></circle>
+                        </svg>
+                        <div class="portrait-frame" tabindex="0"
+                            aria-label="Portrait of Dihen Perera. Move or tap over the image to reveal an anime-style color effect.">
+                            <img class="portrait-image" src="assets/Portrait.jpeg"
+                                alt="Dihen Perera wearing glasses and a suit" width="768" height="768">
+                            <img class="portrait-image portrait-anime" src="assets/portrait.jpg" alt=""
+                                aria-hidden="true" width="768" height="768">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
     </header>
     <main>
         <section id="about" class="about-section section-grid">
-            <div class="section-label reveal"><span>01 / PROFILE</span><i></i></div>
+            <div class="about-profile">
+                <div class="section-label reveal"><span>01 / PROFILE</span><i></i></div>
+                <div class="technology-sphere" tabindex="0"
+                    aria-label="Rotating sphere of technologies. Drag or use the left and right arrow keys to rotate.">
+                    <ul class="sphere-tags">
+                        <li><span>HTML</span></li>
+                        <li><span>VS Code</span></li>
+                        <li><span>C</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>NodeJS</span></li>
+                        <li><span>Git</span></li>
+                        <li><span>CSS</span></li>
+                    </ul>
+                </div>
+            </div>
             <div class="about-main reveal">
                 <p class="eyebrow">A LITTLE ABOUT ME</p>
                 <h2>Curious by nature.<br><span>Focused on what’s next.</span></h2>
@@ -100,40 +135,60 @@
                 </div>
                 <p class="section-aside">A foundation in science,<br>technology, and communication.</p>
             </div>
-            <div class="education-timeline">
-                <article class="education-entry reveal">
-                    <time class="education-year" datetime="2026">2026</time>
-                    <span class="education-marker" aria-hidden="true"></span>
-                    <div class="education-content">
-                        <span class="education-type education-type-university">UNIVERSITY</span>
-                        <h3>University of Sri Jayewardenepura</h3>
-                        <p>Studying toward a Bachelor of Science in Physical Sciences.</p>
-                        <p class="education-period">APR 2026 — PRESENT</p>
-                        <div class="education-tags"><span>APPLIED MATHEMATICS</span><span>PHYSICS</span><span>COMPUTER
-                                SCIENCE</span></div>
-                    </div>
-                </article>
-                <article class="education-entry reveal">
-                    <time class="education-year" datetime="2025">2025</time>
-                    <span class="education-marker education-marker-diploma" aria-hidden="true"></span>
-                    <div class="education-content">
-                        <span class="education-type education-type-diploma">DIPLOMA</span>
-                        <h3>Aquinas College of Higher Studies</h3>
-                        <p>Completed a Diploma in English Language &amp; Literature.</p>
-                        <p class="education-period">JAN 2025 — NOV 2025</p>
-                        <div class="education-tags"><span>SKILL : COMMUNICATION</span></div>
-                    </div>
-                </article>
-                <article class="education-entry reveal">
-                    <time class="education-year" datetime="2023">2023–24</time>
-                    <span class="education-marker education-marker-school" aria-hidden="true"></span>
-                    <div class="education-content">
-                        <span class="education-type education-type-school">SECONDARY EDUCATION</span>
-                        <h3>Bandaranayake Central College, Veyangoda</h3>
-                        <p>Studied Physical Sciences from 2023 to 2024.</p>
-                        <div class="education-tags"><span>PHYSICAL SCIENCES</span></div>
-                    </div>
-                </article>
+            <div class="education-layout">
+                <div class="education-timeline">
+                    <article class="education-entry reveal">
+                        <time class="education-year" datetime="2026">2026</time>
+                        <span class="education-marker" aria-hidden="true"></span>
+                        <div class="education-content">
+                            <span class="education-type education-type-university">UNIVERSITY</span>
+                            <h3>University of Sri Jayewardenepura</h3>
+                            <p>Studying toward a Bachelor of Science in Physical Sciences.</p>
+                            <p class="education-period">APR 2026 — PRESENT</p>
+                            <div class="education-tags"><span>APPLIED
+                                    MATHEMATICS</span><span>PHYSICS</span><span>COMPUTER
+                                    SCIENCE</span></div>
+                        </div>
+                    </article>
+                    <article class="education-entry reveal">
+                        <time class="education-year" datetime="2025">2025</time>
+                        <span class="education-marker education-marker-diploma" aria-hidden="true"></span>
+                        <div class="education-content">
+                            <span class="education-type education-type-diploma">DIPLOMA</span>
+                            <h3>Aquinas College of Higher Studies</h3>
+                            <p>Completed a Diploma in English Language &amp; Literature.</p>
+                            <p class="education-period">JAN 2025 — NOV 2025</p>
+                            <div class="education-tags"><span>SKILL : COMMUNICATION</span></div>
+                        </div>
+                    </article>
+                    <article class="education-entry reveal">
+                        <time class="education-year" datetime="2023">2023–24</time>
+                        <span class="education-marker education-marker-school" aria-hidden="true"></span>
+                        <div class="education-content">
+                            <span class="education-type education-type-school">SECONDARY EDUCATION</span>
+                            <h3>Bandaranayake Central College, Veyangoda</h3>
+                            <p>Studied Physical Sciences from 2023 to 2024.</p>
+                            <div class="education-tags"><span>PHYSICAL SCIENCES</span></div>
+                        </div>
+                    </article>
+                </div>
+                <figure class="education-steps reveal" aria-hidden="true">
+                    <svg class="steps-graphic" viewBox="0 0 520 360" focusable="false">
+                        <defs>
+                            <linearGradient id="steps-fill" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#e34b5f" stop-opacity=".28"></stop>
+                                <stop offset="1" stop-color="#7f1d32" stop-opacity=".02"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path d="M36 304H126V250H216V196H306V142H396V88H484V340H36Z" fill="url(#steps-fill)"></path>
+                        <path d="M36 304H126V250H216V196H306V142H396V88H484" fill="none" stroke="#e34b5f"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                        <path d="M36 340H484M36 304V340M126 250V340M216 196V340M306 142V340M396 88V340" fill="none"
+                            stroke="#7f1d32" stroke-opacity=".55" stroke-width="1"></path>
+                        <circle cx="484" cy="88" r="6" fill="#e34b5f"></circle>
+                        <circle cx="484" cy="88" r="13" fill="none" stroke="#e34b5f" stroke-opacity=".35"></circle>
+                    </svg>
+                </figure>
             </div>
         </section>
         <section id="skills" class="skills-section">
@@ -142,39 +197,69 @@
                     <p class="eyebrow">03 / CAPABILITIES</p>
                     <h2>Skills &amp; interests</h2>
                 </div>
-                <p class="section-aside">A growing toolkit for turning<br>questions into solutions.</p>
+                <p class="section-aside">A quick look at what I know<br>and what I love learning.</p>
             </div>
-            <ul class="skill-list">
-                <li><button class="skill-button reveal" type="button" data-skill="C Programming"
-                        data-description="Writing programs in C and learning core programming concepts such as variables, conditionals, loops, and functions."><span
-                            class="skill-index">01</span><span class="skill-icon">{ }</span><span class="skill-name">C
-                            Programming</span><span class="skill-arrow">↗</span></button></li>
-                <li><button class="skill-button reveal" type="button" data-skill="HTML"
-                        data-description="Using HTML to structure clear, semantic content for web pages."><span
-                            class="skill-index">02</span><span class="skill-icon">&lt;/&gt;</span><span
-                            class="skill-name">HTML</span><span class="skill-arrow">↗</span></button></li>
-                <li><button class="skill-button reveal" type="button" data-skill="Problem Solving"
-                        data-description="Breaking challenges into smaller steps and applying logical thinking to find practical solutions."><span
-                            class="skill-index">03</span><span class="skill-icon">⌘</span><span
-                            class="skill-name">Problem Solving</span><span class="skill-arrow">↗</span></button></li>
-                <li><button class="skill-button reveal" type="button" data-skill="Mathematics"
-                        data-description="Studying mathematical ideas and applying analytical reasoning to work through problems."><span
-                            class="skill-index">04</span><span class="skill-icon">∑</span><span
-                            class="skill-name">Mathematics</span><span class="skill-arrow">↗</span></button></li>
-                <li><button class="skill-button reveal" type="button" data-skill="Physics"
-                        data-description="Exploring physical principles through scientific study and applying them to understand how the world works."><span
-                            class="skill-index">05</span><span class="skill-icon">◉</span><span
-                            class="skill-name">Physics</span><span class="skill-arrow">↗</span></button></li>
-            </ul>
+            <div class="capability-layout">
+                <div class="capability-block reveal">
+                    <div class="capability-block-heading">
+                        <div>
+                            <span class="capability-label">WHAT I CAN DO</span>
+                            <h3>Skills</h3>
+                        </div>
+                        <p>A growing set of technical and analytical skills.</p>
+                    </div>
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <span class="skill-card-icon" aria-hidden="true">&lt;/&gt;</span>
+                            <h4>Web Development</h4>
+                            <p>HTML <span>·</span> CSS <span>·</span> JavaScript</p>
+                        </article>
+                        <article class="skill-card">
+                            <span class="skill-card-icon" aria-hidden="true">{ }</span>
+                            <h4>Programming</h4>
+                            <p>C <span>·</span> JavaScript</p>
+                        </article>
+                        <article class="skill-card">
+                            <span class="skill-card-icon" aria-hidden="true">⌘</span>
+                            <h4>Tools</h4>
+                            <p>Git <span>·</span> VS Code <span>·</span> Node.js</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="capability-block interests-block reveal">
+                    <div class="capability-block-heading">
+                        <div>
+                            <span class="capability-label">WHAT I ENJOY EXPLORING</span>
+                            <h3>Interests</h3>
+                        </div>
+                        <p>Ideas and subjects that keep me curious.</p>
+                    </div>
+                    <div class="interests-grid">
+                        <article class="interest-card">
+                            <span class="interest-symbol" aria-hidden="true">01</span>
+                            <div>
+                                <h4>Technology</h4>
+                                <p>Building useful things with code.</p>
+                            </div>
+                        </article>
+                        <article class="interest-card">
+                            <span class="interest-symbol" aria-hidden="true">∑</span>
+                            <div>
+                                <h4>Mathematics</h4>
+                                <p>Patterns, logic, and problem solving.</p>
+                            </div>
+                        </article>
+                        <article class="interest-card">
+                            <span class="interest-symbol" aria-hidden="true">◉</span>
+                            <div>
+                                <h4>Physics</h4>
+                                <p>Understanding how the world works.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </section>
-        <dialog class="skill-dialog" aria-labelledby="skill-dialog-title">
-            <div class="dialog-top">
-                <p class="eyebrow">CAPABILITY / DETAIL</p><button class="skill-dialog-close" type="button"
-                    aria-label="Close skill details">×</button>
-            </div>
-            <h2 id="skill-dialog-title"></h2>
-            <p class="skill-dialog-description"></p>
-        </dialog>
         <section id="projects" class="projects-section">
             <div class="section-top reveal">
                 <div>
@@ -198,7 +283,32 @@
                     </div>
                 </article>
                 <article class="project-card reveal">
-                    <div class="project-number"><span>PROJECT 02</span><span class="project-type">PROGRAMMING</span>
+                    <div class="project-number"><span>PROJECT 02</span><span class="project-type">WEB APP / 2026</span>
+                    </div>
+                    <div class="project-visual visual-expense" aria-hidden="true">
+                        <div class="expense-dashboard">
+                            <div class="expense-topline"><b>OVERVIEW</b><span>•••</span></div>
+                            <div class="expense-balance"><small>TOTAL SPENDING</small><strong>$ 1,248.50</strong></div>
+                            <div class="expense-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                            <div class="expense-rows"><i></i><i></i><i></i></div>
+                        </div>
+                    </div>
+                    <h3>Personal Expense Tracker</h3>
+                    <p>A web app for tracking personal expenses and reviewing spending.</p>
+                    <div class="project-meta">
+                        <div class="project-tags"><span>Expense tracking</span><span>Web app</span></div>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/Kavee234/Personal-Expense-Tracker"
+                                target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                            <a class="project-link" href="https://kavee234.github.io/Personal-Expense-Tracker/"
+                                target="_blank" rel="noopener noreferrer">GitHub Pages <span>↗</span></a>
+                            <a class="project-link" href="https://dpnova.netlify.app" target="_blank"
+                                rel="noopener noreferrer">Netlify <span>↗</span></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-number"><span>PROJECT 03</span><span class="project-type">PROGRAMMING</span>
                     </div>
                     <div class="project-visual visual-cinema">
                         <div class="seat-grid" aria-hidden="true"></div><span>SEAT<br>ALLOCATOR<span
@@ -213,7 +323,7 @@
                     </div>
                 </article>
                 <article class="project-card reveal">
-                    <div class="project-number"><span>PROJECT 03</span><span class="project-type">PROGRAMMING</span>
+                    <div class="project-number"><span>PROJECT 04</span><span class="project-type">PROGRAMMING</span>
                     </div>
                     <div class="project-visual visual-hospital"><span class="hospital-cross">+</span><span
                             class="hospital-grid">RESOURCE<br>ALLOCATION<br><i>● ● ● ● ●</i><br><i>● ● ● ●
@@ -253,6 +363,7 @@
                 rel="noopener noreferrer">LinkedIn ↗</a></div><a class="back-top" href="#home"
             aria-label="Back to top">↑</a>
     </footer>
+    <div class="custom-cursor" aria-hidden="true"><span></span></div>
 </body>
 
 </html>
