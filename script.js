@@ -224,7 +224,37 @@ function setupTechnologySphere(sphere, options = {}) {
 
 setupTechnologySphere(document.querySelector(".technology-sphere"), { interactive: true });
 
-const customCursor = document.querySelector(".custom-cursor");
+const detailDialog = document.querySelector(".detail-dialog");
+const detailDialogTitle = document.querySelector("#detail-dialog-title");
+const detailDialogDescription = document.querySelector("#detail-dialog-description");
+
+function openDetails(card) {
+    detailDialogTitle.textContent = card.dataset.detailTitle;
+    detailDialogDescription.textContent = card.dataset.detailDescription;
+    detailDialog.showModal();
+}
+
+document.addEventListener("click", (event) => {
+    if (!(event.target instanceof Element)) return;
+    const card = event.target.closest(".skill-card, .interest-card, .project-card");
+    if (!card || event.target.closest("a")) return;
+    openDetails(card);
+});
+
+document.querySelectorAll(".skill-card, .interest-card").forEach((card) => {
+    card.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+        event.preventDefault();
+        openDetails(card);
+    });
+});
+
+document.querySelector(".detail-dialog-close").addEventListener("click", () => detailDialog.close());
+detailDialog.addEventListener("click", (event) => {
+    if (event.target === detailDialog) detailDialog.close();
+});
+
+const customCursors = document.querySelectorAll(".custom-cursor");
 const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 if (finePointer) {
     if (!reducedMotion) {
@@ -240,18 +270,20 @@ if (finePointer) {
     document.addEventListener("pointermove", (event) => {
         if (event.pointerType !== "mouse") return;
         document.documentElement.classList.add("has-custom-cursor");
-        customCursor.classList.add("is-visible");
-        customCursor.style.setProperty("--cursor-x", `${event.clientX}px`);
-        customCursor.style.setProperty("--cursor-y", `${event.clientY}px`);
-        customCursor.classList.toggle("is-hovering", Boolean(event.target.closest("a, button, input, textarea, select, [tabindex]")));
+        customCursors.forEach((customCursor) => {
+            customCursor.classList.add("is-visible");
+            customCursor.style.setProperty("--cursor-x", `${event.clientX}px`);
+            customCursor.style.setProperty("--cursor-y", `${event.clientY}px`);
+            customCursor.classList.toggle("is-hovering", Boolean(event.target.closest("a, button, input, textarea, select, [tabindex]")));
+        });
     });
     document.addEventListener("pointerout", (event) => {
         if (event.relatedTarget) return;
         document.documentElement.classList.remove("has-custom-cursor");
-        customCursor.classList.remove("is-visible", "is-hovering");
+        customCursors.forEach((customCursor) => customCursor.classList.remove("is-visible", "is-hovering"));
     });
     window.addEventListener("blur", () => {
         document.documentElement.classList.remove("has-custom-cursor");
-        customCursor.classList.remove("is-visible", "is-hovering");
+        customCursors.forEach((customCursor) => customCursor.classList.remove("is-visible", "is-hovering"));
     });
 }

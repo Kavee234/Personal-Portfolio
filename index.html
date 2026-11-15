@@ -209,17 +209,23 @@
                         <p>A growing set of technical and analytical skills.</p>
                     </div>
                     <div class="skills-grid">
-                        <article class="skill-card">
+                        <article class="skill-card" tabindex="0" role="button" aria-haspopup="dialog"
+                            data-detail-title="Web Development"
+                            data-detail-description="I use HTML to structure pages, CSS to shape responsive layouts and visual design, and JavaScript to add interactive behavior. These skills come together in projects such as this portfolio.">
                             <span class="skill-card-icon" aria-hidden="true">&lt;/&gt;</span>
                             <h4>Web Development</h4>
                             <p>HTML <span>·</span> CSS <span>·</span> JavaScript</p>
                         </article>
-                        <article class="skill-card">
+                        <article class="skill-card" tabindex="0" role="button" aria-haspopup="dialog"
+                            data-detail-title="Programming"
+                            data-detail-description="I enjoy using C and JavaScript to turn problems into clear, practical solutions. Programming helps me build a strong foundation in logic, structured thinking, and writing maintainable code.">
                             <span class="skill-card-icon" aria-hidden="true">{ }</span>
                             <h4>Programming</h4>
                             <p>C <span>·</span> JavaScript</p>
                         </article>
-                        <article class="skill-card">
+                        <article class="skill-card" tabindex="0" role="button" aria-haspopup="dialog"
+                            data-detail-title="Tools"
+                            data-detail-description="I use Git to track changes and collaborate, VS Code as my development environment, and Node.js for working with JavaScript tools and projects.">
                             <span class="skill-card-icon" aria-hidden="true">⌘</span>
                             <h4>Tools</h4>
                             <p>Git <span>·</span> VS Code <span>·</span> Node.js</p>
@@ -235,21 +241,27 @@
                         <p>Ideas and subjects that keep me curious.</p>
                     </div>
                     <div class="interests-grid">
-                        <article class="interest-card">
+                        <article class="interest-card" tabindex="0" role="button" aria-haspopup="dialog"
+                            data-detail-title="Technology"
+                            data-detail-description="I like exploring how technology can solve everyday problems, from building websites to creating small applications that make information easier to use.">
                             <span class="interest-symbol" aria-hidden="true">01</span>
                             <div>
                                 <h4>Technology</h4>
                                 <p>Building useful things with code.</p>
                             </div>
                         </article>
-                        <article class="interest-card">
+                        <article class="interest-card" tabindex="0" role="button" aria-haspopup="dialog"
+                            data-detail-title="Mathematics"
+                            data-detail-description="Mathematics keeps me curious about patterns, logic, and problem solving. I enjoy applying that structured way of thinking when working through programming challenges.">
                             <span class="interest-symbol" aria-hidden="true">∑</span>
                             <div>
                                 <h4>Mathematics</h4>
                                 <p>Patterns, logic, and problem solving.</p>
                             </div>
                         </article>
-                        <article class="interest-card">
+                        <article class="interest-card" tabindex="0" role="button" aria-haspopup="dialog"
+                            data-detail-title="Physics"
+                            data-detail-description="Physics is a way to understand how the world works by connecting observation with logical explanations. I enjoy learning about the ideas and systems behind everyday phenomena.">
                             <span class="interest-symbol" aria-hidden="true">◉</span>
                             <div>
                                 <h4>Physics</h4>
@@ -269,7 +281,8 @@
                 <p class="section-aside">Small systems. Practical thinking.<br>Room to keep building.</p>
             </div>
             <div class="project-grid">
-                <article class="project-card reveal">
+                <article class="project-card reveal" data-detail-title="Personal Portfolio"
+                    data-detail-description="A personal website built to introduce me, highlight my skills and interests, and bring selected projects together in one place. The interface uses HTML, CSS, and JavaScript.">
                     <div class="project-number"><span>PROJECT 01</span><span class="project-type">WEB / 2026</span>
                     </div>
                     <div class="project-visual visual-web"><span
@@ -281,8 +294,11 @@
                             class="project-link" href="https://github.com/Kavee234/Personal-Portfolio" target="_blank"
                             rel="noopener noreferrer">View repository <span>↗</span></a>
                     </div>
+                    <button class="detail-trigger" type="button" aria-haspopup="dialog">Project details <span
+                            aria-hidden="true">+</span></button>
                 </article>
-                <article class="project-card reveal">
+                <article class="project-card reveal" data-detail-title="Personal Expense Tracker"
+                    data-detail-description="A web app for keeping track of personal expenses and reviewing spending. It brings expense information together to make day-to-day spending easier to follow.">
                     <div class="project-number"><span>PROJECT 02</span><span class="project-type">WEB APP / 2026</span>
                     </div>
                     <div class="project-visual visual-expense" aria-hidden="true">
@@ -306,8 +322,11 @@
                                 rel="noopener noreferrer">Netlify <span>↗</span></a>
                         </div>
                     </div>
+                    <button class="detail-trigger" type="button" aria-haspopup="dialog">Project details <span
+                            aria-hidden="true">+</span></button>
                 </article>
-                <article class="project-card reveal">
+                <article class="project-card reveal" data-detail-title="Cinema Ticket Booking System"
+                    data-detail-description="A C program for managing cinema ticket bookings and customer details. The project explores how a simple booking workflow can be organized around seats and customer records.">
                     <div class="project-number"><span>PROJECT 03</span><span class="project-type">PROGRAMMING</span>
                     </div>
                     <div class="project-visual visual-cinema">
@@ -321,8 +340,12 @@
                             href="https://github.com/Kavee234/MovieSeatBookingSystem" target="_blank"
                             rel="noopener noreferrer">View repository <span>↗</span></a>
                     </div>
+                    <button class="detail-trigger" type="button" aria-haspopup="dialog">Project details <span
+                            aria-hidden="true">+</span></button>
                 </article>
-                <article class="project-card reveal">
+                <article class="project-card reveal"
+                    data-detail-title="Hospital Management &amp; Resource Allocation System"
+                    data-detail-description="A C-based project focused on organizing hospital data and representing resource allocation. It applies programming fundamentals to a practical management scenario.">
                     <div class="project-number"><span>PROJECT 04</span><span class="project-type">PROGRAMMING</span>
                     </div>
                     <div class="project-visual visual-hospital"><span class="hospital-cross">+</span><span
@@ -335,6 +358,8 @@
                             href="https://github.com/Kavee234/Smart-Hospital-Resource-Allocation-System" target="_blank"
                             rel="noopener noreferrer">View repository <span>↗</span></a>
                     </div>
+                    <button class="detail-trigger" type="button" aria-haspopup="dialog">Project details <span
+                            aria-hidden="true">+</span></button>
                 </article>
             </div>
         </section>
@@ -363,6 +388,15 @@
                 rel="noopener noreferrer">LinkedIn ↗</a></div><a class="back-top" href="#home"
             aria-label="Back to top">↑</a>
     </footer>
+    <dialog class="detail-dialog" aria-labelledby="detail-dialog-title">
+        <div class="detail-dialog-heading">
+            <span class="capability-label">MORE INFORMATION</span>
+            <button class="detail-dialog-close" type="button" aria-label="Close details">×</button>
+        </div>
+        <h2 id="detail-dialog-title"></h2>
+        <p id="detail-dialog-description"></p>
+        <div class="custom-cursor" aria-hidden="true"><span></span></div>
+    </dialog>
     <div class="custom-cursor" aria-hidden="true"><span></span></div>
 </body>
 
