@@ -254,6 +254,30 @@ detailDialog.addEventListener("click", (event) => {
     if (event.target === detailDialog) detailDialog.close();
 });
 
+const contactForm = document.querySelector("#contact-form");
+if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const toEmail = "kaveeshap81@gmail.com";
+        const name = String(formData.get("name") || "").trim();
+        const fromEmail = String(formData.get("from") || "").trim();
+        const message = String(formData.get("message") || "").trim();
+
+        const subject = encodeURIComponent(`Website Inquiry${name ? ` from ${name}` : ""}`);
+        const body = encodeURIComponent([
+            `To: ${toEmail}`,
+            `From: ${fromEmail}`,
+            `Name: ${name}`,
+            "",
+            message,
+        ].join("\n"));
+
+        window.location.href = `mailto:${toEmail}?subject=${subject}&body=${body}`;
+    });
+}
+
 const customCursors = document.querySelectorAll(".custom-cursor");
 const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 if (finePointer) {

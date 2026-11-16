@@ -371,15 +371,17 @@
                 <p>Send me a message and I’ll be glad to hear from you.</p><a class="contact-email"
                     href="mailto:kaveeshap81@gmail.com">START A CONVERSATION <span>↗</span></a>
             </div>
-            <form class="contact-form reveal" action="mailto:kaveeshap81@gmail.com?subject=Website%20Inquiry"
-                method="post" enctype="text/plain">
+            <form id="contact-form" class="contact-form reveal" action="mailto:kaveeshap81@gmail.com" method="post"
+                enctype="text/plain">
+                <p class="form-recipient">To: kaveeshap81@gmail.com</p>
                 <label for="name">Your name</label><input class="form-control" type="text" id="name" name="name"
-                    placeholder="Enter your name" required><label for="email">Email address</label><input
-                    class="form-control" type="email" id="email" name="email" placeholder="Enter your email"
+                    placeholder="Enter your name" required><label for="email">From (your email)</label><input
+                    class="form-control" type="email" id="email" name="from" placeholder="Enter your email"
                     required><label for="message">Your message</label><textarea class="form-control" id="message"
                     name="message" rows="4" placeholder="Write your message here..." required></textarea><button
                     class="button button-primary" type="submit">Send message <span>↗</span></button>
-                <p class="form-note">Opens your email app to send the message.</p>
+                <p class="form-note">Opens your email app and sends the message to Kaveesha with your email in the From
+                    field.</p>
             </form>
         </section>
     </main>

@@ -1818,6 +1818,14 @@ section {
     letter-spacing: .07em
 }
 
+.form-recipient {
+    margin: 0 0 16px;
+    color: var(--cyan);
+    font: 11px var(--mono);
+    letter-spacing: .12em;
+    text-transform: uppercase
+}
+
 .form-control {
     width: 100%;
     margin: 0 0 19px;
