@@ -25,7 +25,7 @@ A simple, static personal portfolio webpage built using pure HTML as part of cou
 
 
 
-* HTML5 , CSS , JavaScript
+* HTML5 , CSS , JavaScript , NodeJS 
 
 #### 
 

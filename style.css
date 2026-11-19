@@ -244,10 +244,13 @@ a {
 .intro-mark {
     position: relative;
     z-index: 1;
-    font-size: clamp(64px, 12vw, 110px);
-    font-weight: 800;
-    letter-spacing: -.1em;
     animation: mark-in .65s ease both
+}
+
+.intro-mark img {
+    display: block;
+    width: clamp(180px, 28vw, 300px);
+    height: auto
 }
 
 .intro-mark span,
@@ -335,10 +338,13 @@ a {
 }
 
 .brand {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: -2px;
     text-decoration: none
+}
+
+.brand img {
+    display: block;
+    width: 58px;
+    height: auto
 }
 
 .nav-links {
@@ -1517,8 +1523,13 @@ section {
 }
 
 .visual-window b {
-    color: var(--cyan);
-    font-size: 14px
+    display: flex;
+    align-items: center
+}
+
+.visual-window b img {
+    width: 28px;
+    height: auto
 }
 
 .visual-window>i {
